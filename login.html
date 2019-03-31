@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="Age.css">
+        <style>
+                .error
+                {
+                color: red;
+                font-size: 18px;
+                font-weight: bold;
+                 }
+        </style>
+</head>
+    <script>
+        function login(){
+        var l1=document.getElementById('username').value;
+        var p1=document.getElementById('password').value;
+         if(l1=="mohan" && p1=="mohan")
+         {
+            window.open("Age_calc.html","_self")
+         }
+         else
+         error.style="dispaly:block"
+         document.getElementById("username").value = "";
+         document.getElementById("password").value = "";
+        }
+    </script>
+    <body>
+        <span id="lhead"> <h2>MTM PRODUCTS</h2></span>
+        <div class="login" style="border:1">
+            <span id="lhead"><p><b>LOGIN</b></p></span>
+            <p><label><b>User Name:</b></label><input   type="text" maxlength="24" id="username"></p>
+            <p><label><b>Password:</b></label><input  type="password" maxlength="10" id="password"></p>
+            <span class= "error" id="error" style="display:none">*Please enter correct username and password.</span><br>
+            <button id="loginbtn" onclick="login()"><b>login</b></button>
+        </div>
+    </body>
+</html>
